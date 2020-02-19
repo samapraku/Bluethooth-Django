@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Display Interaction</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'bluecon/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'bluecon/css/bootstrap.css' %}">
+
+    </head>
+    <body>
+        <div class="container text-center">
+        <div class="container container-main">
+      <h1>Press START to Start/Resume.</h1>
+      <h2>Press Middle/Fire to change the color of the ball.</h2>
+      <br>
+            <div class="container-canvas">
+                <canvas id="mycanvas" width="800" height="480">
+                    Display Area
+                </canvas>
+            </div>
+        </div>
+        </div>
+
+        <script type="application/javascript" src="{% static 'bluecon/js/script.js' %}"></script>  
+        <script type="application/javascript"  src="{% static 'bluecon/js/jquery.js' %}"></script>
+        <script type="application/javascript"  src="{% static 'bluecon/js/jquery.js' %}"></script>
+        <script type="application/javascript"  src="{% static 'bluecon/js/bootstrap.js' %}"></script>
+   
+    </body>
+</html>
